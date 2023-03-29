@@ -36,5 +36,213 @@
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D4C77406-D363-4979-95B8-1ABF5CA1F2D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appeteziers/Screens/AccountView/AccountView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D4C77406-D363-4979-95B8-1ABF5CA1F2D7 - b3da1bd5f2434afd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Appeteziers.AccountView.body.getter : some"
+                  moduleName = "Appeteziers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yildirim/Desktop/Appeteziers/Appeteziers/Screens/AccountView/AccountView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1312">
+               </Location>
+               <Location
+                  uuid = "D4C77406-D363-4979-95B8-1ABF5CA1F2D7 - a7836320041c37b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Appeteziers.AlertItem) -&gt; SwiftUI.Alert in Appeteziers.AccountView.body.getter : some"
+                  moduleName = "Appeteziers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yildirim/Desktop/Appeteziers/Appeteziers/Screens/AccountView/AccountView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4E84FDDD-C55C-42F4-ABC7-E716D93BE1F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appeteziers/Screens/AccountView/AccountViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "saveChanges()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D21E65D-C83D-417B-A22E-8D0C8B488330"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appeteziers/Screens/AccountView/AccountViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "saveChanges()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0D21E65D-C83D-417B-A22E-8D0C8B488330 - ef835b9a904a40d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Appeteziers.AccountViewModel.saveChanges() -&gt; ()"
+                  moduleName = "Appeteziers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yildirim/Desktop/Appeteziers/Appeteziers/Screens/AccountView/AccountViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "700">
+               </Location>
+               <Location
+                  uuid = "0D21E65D-C83D-417B-A22E-8D0C8B488330 - ef835b9a904a40d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Appeteziers.AccountViewModel.saveChanges() -&gt; ()"
+                  moduleName = "Appeteziers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yildirim/Desktop/Appeteziers/Appeteziers/Screens/AccountView/AccountViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "856">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18D84FB2-9940-46D5-BCDA-70436F78AE3E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appeteziers/Screens/AccountView/AccountViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "saveChanges()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92796B03-C91D-4C1F-9B4B-8F2D3B98F289"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appeteziers/Screens/AccountView/AccountViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "retrieveUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "92796B03-C91D-4C1F-9B4B-8F2D3B98F289 - eeb5221cbce9dfe3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Appeteziers.AccountViewModel.retrieveUser() -&gt; ()"
+                  moduleName = "Appeteziers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yildirim/Desktop/Appeteziers/Appeteziers/Screens/AccountView/AccountViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "92796B03-C91D-4C1F-9B4B-8F2D3B98F289 - eeb5221cbce9dfe3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Appeteziers.AccountViewModel.retrieveUser() -&gt; ()"
+                  moduleName = "Appeteziers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yildirim/Desktop/Appeteziers/Appeteziers/Screens/AccountView/AccountViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "560">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1E294EF-63AF-4F18-98CB-A03B4FCAD531"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appeteziers/Screens/AccountView/AccountViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "isValidForm"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "700FD204-721B-43B2-A266-70074EF6BE78"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appeteziers/Screens/AccountView/AccountViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "isValidForm"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

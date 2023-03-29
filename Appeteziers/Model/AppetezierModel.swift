@@ -27,4 +27,19 @@ struct MockAppetezierData {
                                                   price: 9.31, imageURL: "", calories: 99, protein: 31, carbs: 123)
     
     static let appeteziers = [sampleAppetezier,sampleAppetezier,sampleAppetezier,sampleAppetezier]
+    
+    static let appetezierOne = AppetezierModel(id: 001, name: "Test Appetezier",
+                                                  description: "The description of the test appetezier. Its yummy.",
+                                                  price: 9.31, imageURL: "", calories: 99, protein: 31, carbs: 123)
+    
+    static let appetezierTwo = AppetezierModel(id: 002, name: "Test Appetezier",
+                                                  description: "The description of the test appetezier. Its yummy.",
+                                                  price: 9.31, imageURL: "", calories: 99, protein: 31, carbs: 123)
+    
+    static let appetezierThree = AppetezierModel(id: 003, name: "Test Appetezier",
+                                                  description: "The description of the test appetezier. Its yummy.",
+                                                  price: 9.31, imageURL: "", calories: 99, protein: 31, carbs: 123)
+    
+    static let orderItems = [appetezierOne,appetezierTwo,appetezierThree]
+    
 }

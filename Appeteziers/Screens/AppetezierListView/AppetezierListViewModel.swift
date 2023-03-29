@@ -11,6 +11,8 @@ final class AppetezierListViewModel: ObservableObject {
     @Published var appetezier : [AppetezierModel] = []
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
+    @Published var isShowingDetail = false
+    @Published var selectedAppetezier : AppetezierModel?
     
     func getApeteziers() {
         
