@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7411D29729D49AF0001FF526 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7411D29629D49AF0001FF526 /* EmptyStateView.swift */; };
+		7411D29929D4A802001FF526 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7411D29829D4A802001FF526 /* Order.swift */; };
+		7411D29B29D57148001FF526 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7411D29A29D57148001FF526 /* CustomModifiers.swift */; };
 		747F374829D2BF740090DAFE /* AppeteziersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747F374729D2BF740090DAFE /* AppeteziersApp.swift */; };
 		747F374A29D2BF740090DAFE /* AppetezierTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747F374929D2BF740090DAFE /* AppetezierTabView.swift */; };
 		747F374C29D2BF750090DAFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747F374B29D2BF750090DAFE /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		7411D29629D49AF0001FF526 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		7411D29829D4A802001FF526 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		7411D29A29D57148001FF526 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		747F374429D2BF740090DAFE /* Appeteziers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appeteziers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		747F374729D2BF740090DAFE /* AppeteziersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppeteziersApp.swift; sourceTree = "<group>"; };
 		747F374929D2BF740090DAFE /* AppetezierTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetezierTabView.swift; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 			children = (
 				747F375B29D2C59C0090DAFE /* AppetezierModel.swift */,
 				74A1404029D487B7004F7AF9 /* User.swift */,
+				7411D29829D4A802001FF526 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				74E3392829D33C2D002CB0C6 /* Image */,
 				74E3392729D33C1A002CB0C6 /* Cells */,
 				74E3392929D33C37002CB0C6 /* LoadingView */,
+				7411D29A29D57148001FF526 /* CustomModifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,8 +323,10 @@
 				74E3391629D2E780002CB0C6 /* AppetezierListViewModel.swift in Sources */,
 				747F376229D2CE9C0090DAFE /* APError.swift in Sources */,
 				74A1403929D418B8004F7AF9 /* APButton.swift in Sources */,
+				7411D29929D4A802001FF526 /* Order.swift in Sources */,
 				747F375E29D2CBF90090DAFE /* AppetezierListCell.swift in Sources */,
 				747F374A29D2BF740090DAFE /* AppetezierTabView.swift in Sources */,
+				7411D29B29D57148001FF526 /* CustomModifiers.swift in Sources */,
 				74E3391A29D32062002CB0C6 /* LoadingView.swift in Sources */,
 				74E3391C29D33393002CB0C6 /* RemoteImage.swift in Sources */,
 				747F375C29D2C59C0090DAFE /* AppetezierModel.swift in Sources */,

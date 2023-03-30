@@ -10,6 +10,11 @@ import SwiftUI
 struct AccountView: View {
     
     @StateObject private var viewModel = AccountViewModel()
+    @FocusState private var focusedFied: FormTextfield?
+    
+    enum FormTextfield {
+        case firstName,lastName,email
+    }
 
     var body: some View {
         NavigationView {
@@ -17,8 +22,16 @@ struct AccountView: View {
             Form(){
                 Section("Personel Information") {
                     TextField("First Name", text: $viewModel.user.firstName)
+                        .focused($focusedFied,equals: .firstName)
+                        .onSubmit { focusedFied = .lastName }
+                    
                     TextField("Last Name", text: $viewModel.user.lastName)
+                        .focused($focusedFied,equals: .lastName)
+                        .onSubmit { focusedFied = .email }
+                    
                     TextField("E mail", text: $viewModel.user.email)
+                        .focused($focusedFied,equals: .email)
+                        .onSubmit { focusedFied = nil }
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
