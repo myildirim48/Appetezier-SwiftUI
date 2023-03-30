@@ -19,7 +19,7 @@ struct AccountView: View {
     var body: some View {
         NavigationView {
             
-            Form(){
+            Form{
                 Section("Personel Information") {
                     TextField("First Name", text: $viewModel.user.firstName)
                         .focused($focusedFied,equals: .firstName)
@@ -32,12 +32,15 @@ struct AccountView: View {
                     TextField("E mail", text: $viewModel.user.email)
                         .focused($focusedFied,equals: .email)
                         .onSubmit { focusedFied = nil }
+                        .submitLabel(.continue)
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
-                    
-                    DatePicker("Birthday", selection: $viewModel.user.birthdate,displayedComponents: .date)
-                         
+                                             
+                    DatePicker("Birthday",
+                               selection: $viewModel.user.birthdate,
+                               in:Date().oneHundredTenYearsAgo...Date().eighteenYearAgo,
+                               displayedComponents: .date)
 
                     Button {
                         viewModel.saveChanges()
@@ -56,6 +59,11 @@ struct AccountView: View {
                  
             }
             .navigationTitle("👨🏼‍💼Account")
+            .toolbar {
+                ToolbarItem(placement: .keyboard) {
+                    Button("Dissmis") { focusedFied = nil }
+                }
+            }
 
         }
         .onAppear {

@@ -18,38 +18,58 @@ final class NetworkManager {
     private init() { }
     
     //MARK: -  Network Call for data
-    func getAppeteziers(completed:@escaping(Result<[AppetezierModel], APErrpr>) -> Void){
-        guard let url = URL(string: appetezierURL) else {
-            completed(.failure(.invalidUrl))
-            return }
+    //    func getAppeteziers(completed:@escaping(Result<[AppetezierModel], APErrpr>) -> Void){
+    //        guard let url = URL(string: appetezierURL) else {
+    //            completed(.failure(.invalidUrl))
+    //            return }
+    //
+    //        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+    //            if let _ = error {
+    //                completed(.failure(.unableToComplete))
+    //                return
+    //            }
+    //
+    //            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+    //                completed(.failure(.inlalidResponse))
+    //                return
+    //            }
+    //
+    //            guard let data = data else {
+    //                completed(.failure(.invalidData))
+    //                return
+    //            }
+    //
+    //            do {
+    //                let decoder = JSONDecoder()
+    //                let decodedResponse = try decoder.decode(AppetezierResponse.self, from: data)
+    //                completed(.success(decodedResponse.request))
+    //            }catch {
+    //                completed(.failure(.invalidData))
+    //            }
+    //
+    //        }
+    //        task.resume()
+    //    }
     
-        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
-            if let _ = error {
-                completed(.failure(.unableToComplete))
-                return
-            }
-            
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completed(.failure(.inlalidResponse))
-                return
-            }
-            
-            guard let data = data else {
-                completed(.failure(.invalidData))
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let decodedResponse = try decoder.decode(AppetezierResponse.self, from: data)
-                completed(.success(decodedResponse.request))
-            }catch {
-                completed(.failure(.invalidData))
-            }
-            
+    func getAppeteziers()  async throws -> [AppetezierModel] {
+        guard let url = URL(string: appetezierURL) else { throw APErrpr.invalidUrl }
+        
+        let (data, _) = try await URLSession.shared.data(from: url)
+        
+        //            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+        //                return
+        //            }
+        
+        
+        do {
+            let decoder = JSONDecoder()
+            return try decoder.decode(AppetezierResponse.self, from: data).request
+        }catch {
+            throw APErrpr.invalidData
         }
-        task.resume()
+        
     }
+    
     
     //MARK: -  Download Image
     func downloadImage(urlString: String, completed: @escaping(UIImage?)-> Void){

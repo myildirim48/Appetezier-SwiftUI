@@ -14,10 +14,25 @@ struct AppetezierListCell: View {
     
     var body: some View {
         HStack {
-            AppetezierRemoteImage(urlString: appetezier.imageURL)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 120, height: 90)
-                .cornerRadius(8)
+//            AppetezierRemoteImage(urlString: appetezier.imageURL)
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 120, height: 90)
+//                .cornerRadius(8)
+//
+            AsyncImage(url: URL(string: appetezier.imageURL), scale: 200) { img in
+                img
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120, height: 90)
+                    .cornerRadius(8)
+            } placeholder: {
+                Image("placeholder-food")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120, height: 90)
+                    .cornerRadius(8)
+            }
+
             
             VStack(alignment: .leading, spacing: 5) {
                 Text(appetezier.name)

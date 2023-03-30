@@ -29,7 +29,7 @@ struct AppetezierListView: View {
                     .disabled(viewModel.isShowingDetail)
 
                 }
-                .onAppear {
+                .task {
                     viewModel.getApeteziers()
                 }
                 .blur(radius: viewModel.isShowingDetail ? 20 : 0)
