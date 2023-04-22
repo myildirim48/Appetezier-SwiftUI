@@ -17,42 +17,8 @@ final class NetworkManager {
     
     private init() { }
     
-    //MARK: -  Network Call for data
-    //    func getAppeteziers(completed:@escaping(Result<[AppetezierModel], APErrpr>) -> Void){
-    //        guard let url = URL(string: appetezierURL) else {
-    //            completed(.failure(.invalidUrl))
-    //            return }
-    //
-    //        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
-    //            if let _ = error {
-    //                completed(.failure(.unableToComplete))
-    //                return
-    //            }
-    //
-    //            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-    //                completed(.failure(.inlalidResponse))
-    //                return
-    //            }
-    //
-    //            guard let data = data else {
-    //                completed(.failure(.invalidData))
-    //                return
-    //            }
-    //
-    //            do {
-    //                let decoder = JSONDecoder()
-    //                let decodedResponse = try decoder.decode(AppetezierResponse.self, from: data)
-    //                completed(.success(decodedResponse.request))
-    //            }catch {
-    //                completed(.failure(.invalidData))
-    //            }
-    //
-    //        }
-    //        task.resume()
-    //    }
-    
     func getAppeteziers()  async throws -> [AppetezierModel] {
-        guard let url = URL(string: appetezierURL) else { throw APErrpr.invalidUrl }
+        guard let url = URL(string: appetezierURL) else { throw APError.invalidUrl }
         
         let (data, _) = try await URLSession.shared.data(from: url)
         
@@ -65,7 +31,7 @@ final class NetworkManager {
             let decoder = JSONDecoder()
             return try decoder.decode(AppetezierResponse.self, from: data).request
         }catch {
-            throw APErrpr.invalidData
+            throw APError.invalidData
         }
         
     }

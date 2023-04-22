@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum APErrpr: Error {
+enum APError: Error {
     case invalidUrl
     case inlalidResponse
     case invalidData

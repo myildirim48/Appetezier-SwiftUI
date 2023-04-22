@@ -23,7 +23,7 @@ import SwiftUI
                 isLoading = false
             } catch {
                 
-                if let apError = error as? APErrpr {
+                if let apError = error as? APError {
                     switch apError {
                     case .invalidUrl:
                         alertItem = AlertContext.invalidURL

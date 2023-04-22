@@ -19,10 +19,12 @@ struct AppetezierListView: View {
                     List(viewModel.appetezier) { appetezier in
                         AppetezierListCell(appetezier: appetezier)
                             .listRowSeparator(.hidden)
+
                             .onTapGesture {
                                 viewModel.isShowingDetail = true
                                 viewModel.selectedAppetezier = appetezier
                             }
+                          
                     }
                     .navigationTitle("🍟 Appeteziers")
                     .listStyle(.plain)
